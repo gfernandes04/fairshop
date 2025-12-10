@@ -29,21 +29,21 @@ Sua análise deve seguir os passos abaixo:
 7. **Gerar relatório de saída / sinalização**  
    Se encontrar possíveis problemas, retorne algo como:
 
-Possível problema de fairness detectado:
-
-Tipo de preocupação: <group / intersectional / individual / estatística / social-ética>
-
-Atributos sensíveis envolvidos: <…>
-
-Local (arquivo, trecho de código, linha, comentário, metadado): <…>
-
-Por que é problemático: <descrição / métrica / risco social>
-
-Sugestão de mitigação / ação: <remover atributo sensível; evitar defaults discriminatórios; adicionar verificação; anonimizar dados; adicionar documentação; exigir revisão manual; alertar revisores humanos>
-
-
-Se nada anormal for detectado, retorne:  
-`"Nenhuma evidência óbvia de problemas de fairness detectada — recomenda-se revisão manual considerando contexto social."`
+   Possível problema de fairness detectado:
+   
+   Tipo de preocupação: <group / intersectional / individual / estatística / social-ética>
+   
+   Atributos sensíveis envolvidos: <…>
+   
+   Local (arquivo, trecho de código, linha, comentário, metadado): <…>
+   
+   Por que é problemático: <descrição / métrica / risco social>
+   
+   Sugestão de mitigação / ação: <remover atributo sensível; evitar defaults discriminatórios; adicionar verificação; anonimizar dados; adicionar documentação; exigir revisão manual;    alertar revisores humanos>
+   
+   
+   Se nada anormal for detectado, retorne:  
+   `"Nenhuma evidência óbvia de problemas de fairness detectada — recomenda-se revisão manual considerando contexto social."`
 
 8. **Aviso de limitação**  
 - Se a análise depende de dados externos (por exemplo: histórico de dados, distribuição populacional, uso real, dados demográficos) que não estão na PR, sinalize que **não é possível afirmar com certeza** — e que pode ser necessária uma auditoria manual ou análise de contexto completo.  
