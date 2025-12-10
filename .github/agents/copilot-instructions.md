@@ -18,3 +18,4 @@ Se nada de injustiça for detectado, retorne algo como:
 
 Se a detecção depender de informações externas (dados demográficos, histórico, uso real), indique:  
 `Impossível afirmar com certeza — sugere-se auditoria manual mais profunda.`  
+
