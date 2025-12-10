@@ -6,3 +6,4 @@ def login(username: str, password: str, users_db):
 
 def is_strong_password(pwd: str):
     return len(pwd) >= 8 and any(c.isdigit() for c in pwd)
+
