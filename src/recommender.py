@@ -3,3 +3,12 @@ def recommend_products(user, db):
     if not history:
         return db.get_popular_products()
     return db.get_similar_products(history[-1])
+
+class Recommender:
+    def fit(self, data):
+        pass
+
+def train_recommender(data):
+    model = Recommender()
+    model.fit(data)
+    return model
