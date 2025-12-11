@@ -4,5 +4,11 @@ def recommend_products(user, db):
         return db.get_popular_products()
     return db.get_similar_products(history[-1])
 
-def clean_purchases(purchases):
-    return [p for p in purchases if p["status"] != "ERROR"]
+class Recommender:
+    def fit(self, data):
+        pass
+
+def train_recommender(data):
+    model = Recommender()
+    model.fit(data)
+    return model
