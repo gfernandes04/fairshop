@@ -12,3 +12,10 @@ def train_recommender(data):
     model = Recommender()
     model.fit(data)
     return model
+
+# recomendar pelo pais se for brazil, por exemplo
+def recommend_by_country(user, db):
+    country = db.get_user_country(user)
+    if country == 'Brazil':
+        return db.get_brazilian_products()
+    return []
